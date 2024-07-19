@@ -1,8 +1,17 @@
-# React + Vite
+# Preview
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![download](https://github.com/user-attachments/assets/41566f65-8611-4183-b3db-fa5f93269c4b)
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+# Service Booking App
+
+- **React-based**: Built using React for a dynamic and responsive user interface.
+- **Redux for State Management**: Manages bookings and availability using Redux.
+- **Dynamic Availability**: Displays available hours based on the selected date, with previously booked times faded out or marked as unavailable.
+- **React Router**: Implements React Router for navigation between different pages.
+- **Tailwind CSS**: Styled using Tailwind CSS for a modern and clean design.
+- **ChatGPT Assistance**: Utilized ChatGPT for generating Tailwind CSS classes and other development support.
+
+
+# Live Link --published on Vercel
