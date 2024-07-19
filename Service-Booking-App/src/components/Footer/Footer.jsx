@@ -9,8 +9,8 @@ const Footer = () => {
         </div>
         <div>
           <ul className="flex space-x-4">
-            <li><a href="#" className="hover:text-gray-400">Source Code</a></li>
-            <li><a href="#" className="hover:text-gray-400">Github</a></li>
+            <li><a href="https://github.com/itsonlyTushar/React-Projects/tree/main/Service-Booking-App" className="hover:text-gray-400">Source Code</a></li>
+            <li><a href="https://github.com/itsonlyTushar" className="hover:text-gray-400">Github</a></li>
           </ul>
         </div>
       </div>
