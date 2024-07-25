@@ -38,7 +38,7 @@ function App() {
       />}
       <div className='my-4 flex gap-3'>
        <a href="https://github.com/itsonlyTushar" className='text-3xl'><FaGithub /></a>
-       <a href="https://github.com/itsonlyTushar" className='text-3xl'><TbSourceCode /></a>
+       <a href="https://github.com/itsonlyTushar/React-Projects/tree/main/Flash-Cards-App" className='text-3xl'><TbSourceCode /></a>
       </div>
       
       </div>
