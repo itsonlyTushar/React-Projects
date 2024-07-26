@@ -2,7 +2,7 @@
 
 ## Live Demo
 
-Check out the live demo of the application [here]([https://your-live-demo-url.com](https://expense-tracker-gamma-azure.vercel.app/)).
+Check out the live demo of the application [here]([https://your-live-demo-url.com](https://expense-tracker-gamma-azure.vercel.app)
 
 ![image](https://github.com/user-attachments/assets/25a9abaf-2d4e-4391-8cb9-7a388b280e92)
 
