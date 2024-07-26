@@ -41,4 +41,4 @@ The Tailwind CSS styling for this application was assisted by ChatGPT to ensure 
 1. **Clone the repository:**
 
    ```bash
-   git clone https://github.com/yourusername/expense-tracker.git
+   git clone [https://github.com/yourusername/expense-tracker.git](https://github.com/itsonlyTushar/React-Projects/tree/main/Expense-Tracker)
