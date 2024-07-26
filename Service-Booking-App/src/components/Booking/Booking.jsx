@@ -18,14 +18,17 @@ function Booking() {
             </tr>
           </thead>
           <tbody>
-            {data.map((item, index) => (
-              <tr key={index} className="border-b border-gray-700 hover:bg-gray-600">
-                <td className="py-3 px-4">{item.name}</td>
-                <td className="py-3 px-4">{item.bookings}</td>
-                <td className="py-3 px-4">{item.date}</td>
-                <td className="py-3 px-4">{item.time}</td>
-              </tr>
-            ))}
+            {(
+              data.map((item, index) => (
+                <tr key={index} className="border-b border-gray-700 hover:bg-gray-600">
+                  <td className="py-3 px-4">{item.name}</td>
+                  <td className="py-3 px-4">{item.bookings}</td>
+                  <td className="py-3 px-4">{item.date}</td>
+                  <td className="py-3 px-4">{item.time}</td>
+                </tr>
+              ))
+            ) 
+            }
           </tbody>
         </table>
       </div>

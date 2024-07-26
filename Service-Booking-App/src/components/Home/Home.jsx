@@ -4,6 +4,7 @@ import "react-datepicker/dist/react-datepicker.css";
 import { useDispatch, useSelector } from 'react-redux';
 import { addBooking, showHours } from '../../../features/bookings';
 import { format } from 'date-fns';
+import Modal from '../Modal/Modal';
 
 function Home() {
   const [name, setName] = useState('');
@@ -11,6 +12,19 @@ function Home() {
   const [selectedBooking, setSelectedBooking] = useState('');
   const [selectedTime, setSelectedTime] = useState('');
   const dispatch = useDispatch();
+  const [open,setOpen] = useState(false)
+
+
+  const handleClose = ()=>{
+    setOpen(false)
+  } 
+
+  const handleOpen = () =>{
+    setOpen(true)
+  }
+
+
+  
 
   const availableTime = useSelector((state) => state.bookings.filteredTimeAvailable);
 
@@ -30,6 +44,7 @@ function Home() {
     setSelectedBooking('');
     setSelectedDate(new Date());
     setSelectedTime('');
+    handleOpen()
   };
 
   return (
@@ -40,6 +55,7 @@ function Home() {
           <div>
             <label htmlFor="name" className="block text-white">Name</label>
             <input
+              required
               className="w-full mb-2 p-2 border border-gray-600 rounded bg-gray-800 text-white"
               placeholder="Enter a Name"
               type="text"
@@ -50,6 +66,7 @@ function Home() {
           <div>
             <label htmlFor="bookings" className="block text-white">Select Service</label>
             <select
+              required
               name="bookings"
               value={selectedBooking}
               onChange={(e) => setSelectedBooking(e.target.value)}
@@ -77,6 +94,7 @@ function Home() {
           <div>
             <label htmlFor="time" className="block text-white">Select Time</label>
             <select
+              required
               name="time"
               value={selectedTime}
               onChange={(e) => setSelectedTime(e.target.value)}
@@ -89,6 +107,9 @@ function Home() {
             </select>
           </div>
           <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">Book Now</button>
+          <Modal isOpen={open} onClose={handleClose} >
+            <h1 className='text-amber-800 text-xl'>Service is Succefully Booked</h1>
+          </Modal>
         </form>
       </div>
     </div>
